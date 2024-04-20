@@ -1,0 +1,330 @@
+/*CSS Reset / Normalize*/
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+.all {
+    margin-left: 64px;
+    margin-right: 64px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.menu header {
+    display: flex; /* Torna o header um contêiner flexível */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.menu__title {
+    margin-left: 10px; /* Adiciona espaçamento à esquerda do título */
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu__list {
+    display: flex; /* Exibe os itens do menu em linha */
+    list-style: none; /* Remove os marcadores de lista */
+}
+
+.menu__list__item {
+    margin-left: 10px; /* Adiciona espaçamento entre os itens do menu */
+    padding: 10px;
+}
+
+.menu__list__item a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.title__div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha os itens verticalmente */
+    margin-top: 10px;
+    margin-bottom: 30vpx;
+}
+
+.title__bio {
+    font-size: 36px; /* Altere o tamanho conforme necessário */
+}
+.title__dados {
+    text-align: left;
+}
+
+.title__subsection {
+    font-size: 18px; /* Altere o tamanho conforme necessário */
+}
+
+.title__container {
+    margin-bottom: 64px
+}
+
+.title__profile {
+    /* Não precisa de ajustes */
+}
+
+.title__network {
+    display: flex;
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o espaçamento interno */
+}
+
+.title__network__item {
+    margin-right: 20px; /* Adiciona espaçamento entre os itens */
+}
+
+.title__network__item:last-child {
+    margin-right: 0; /* Remove a margem do último item */
+}
+
+.title__network__item a {
+    text-decoration: none;
+    color: black;
+    display: flex; /* Para alinhar o texto e a seta na mesma linha */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.title__network__item img {
+    margin-left: 5px; /* Adiciona espaçamento à esquerda da seta */
+}
+
+.about {
+    background-color: #8f8c93; /* Define a cor de fundo como azul */
+    padding: 50px; /* Adiciona um espaçamento interno para separar o conteúdo da borda */
+    color: white; /* Define a cor do texto como branco para contrastar com o fundo azul */
+}
+
+.skills__line {
+    display: flex; /* Torna a linha um contêiner flexível */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.skills__box {
+    flex: 1; /* Faz com que cada box ocupe a mesma largura */
+    margin: 0 10px; /* Adiciona espaçamento entre as boxes */
+    display: flex; /* Torna o box um contêiner flexível */
+    justify-content: center; /* Alinha os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente */
+    text-align: center; /* Centraliza o texto */
+     background-color: #ffffff; /* Define a cor de fundo como cinza */
+}
+
+.skills__img {
+    width: 50px; /* Define a largura da imagem */
+}
+
+.skills__name {
+    margin-top: 10px; /* Adiciona espaçamento entre a imagem e
+
+
+.hobbies__line {
+    display: flex; /* Torna a linha um contêiner flexível */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+
+
+.hobbies__line {
+    display: flex; /* Torna a linha um contêiner flexível */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.hobbies__box {
+    flex: 1; /* Faz com que cada box ocupe a mesma largura */
+    background-color: white; /* Define a cor de fundo como branca */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex; /* Torna o box um contêiner flexível */
+    flex-direction: column; /* Define a direção do flexbox como coluna */
+    align-items: center; /* Alinha os itens horizontalmente */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.hobbies__img {
+    margin-bottom: 10px; /* Adiciona espaçamento abaixo da imagem */
+}
+
+.hobbies__name {
+    list-style: none; /* Remove o estilo de lista */
+    margin: 0; /* Remove o espaçamento padrão */
+    padding: 0; /* Remove o espaçamento interno */
+}
+
+.academic__courses {
+    display: flex; /* Torna o contêiner um flex container */
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+}
+
+.academic__courses__box {
+    flex: 1; /* Faz com que cada box ocupe a mesma largura */
+    background-color: white; /* Define a cor de fundo como branca */
+    padding: 20px; /* Adiciona espaçamento interno */
+    display: flex; /* Torna o box um flex container */
+    flex-direction: column; /* Define a direção do flex container como coluna */
+    align-items: center; /* Alinha os itens horizontalmente */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+.academic__courses__list {
+    list-style: none; /* Remove o estilo de lista */
+    padding: 0; /* Remove o espaçamento interno */
+    margin: 0; /* Remove o espaçamento externo */
+}
+
+.academic__courses__item__img img {
+    max-width: 100px; /* Define a largura máxima para a imagem */
+}
+
+.academic__courses__item__title h4 {
+    margin: 10px 0; /* Adiciona espaçamento ao redor do título */
+}
+
+.academic__courses__item__subtitle p {
+    margin: 5px 0; /* Adiciona espaçamento ao redor do subtítulo */
+}
+
+
+.formcontato__contacto {
+    display: flex; /* Torna o contêiner um flex container */
+    align-items: center; /* Alinha os itens verticalmente */
+}
+
+.formcontato--esquerda {
+    flex: 1; /* Faz com que a div ocupe 1 parte do espaço disponível */
+}
+
+.formcontato__text {
+    flex: 1; /* Faz com que a div ocupe 1 parte do espaço disponível */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda */
+}
+
+
+
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
+de utiliza-la. 
+
+Mas o que é o BEM?
+
+BEM (Block, Element, Modifier) ​​é uma abordagem baseada em componentes para o desenvolvimento
+web. A ideia por trás disso é dividir a interface do usuário em blocos independentes.
+Isso torna o desenvolvimento de interface fácil e rápido, mesmo com uma interface
+de usuário complexa, e permite a reutilização de código existente sem copiar e colar.
+
+Link da documentação oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sessão Menu*/
+
+section.menu{
+
+}
+
+/*Sessão Title*/
+
+section.title{
+
+}
+
+/*Sessão About*/
+
+section.about{
+
+}
+
+/*Sessão Hobbies*/
+
+section.hobbies{
+    
+}
+
+/* Experiência Acadêmica*/
+
+section.academic{
+
+}
+
+/* experiência*/
+
+section.experience{
+
+}
+
+/*Contato*/
+
+section.formcontato{
+
+}
+
+/*footeer*/
+
+section.footer{
+   
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+@media (min-width: 768px) {
+
+/* Menu */
+
+/*title*/
+
+/*Skills*/
+
+/*Hobbies*/
+
+/*Experiências acadêmicas*/
+
+/*Expeirência profissional*/
+
+}
+
+/*Mobile*/
+@media (min-width: 425px) {
+
+/*Menu*/
+
+/*Titulo*/
+
+/*Sessão sobre*/
+
+/*Skills*/
+
+/*Hobbies*/
+ 
+/*Formação Acadêmica*/
+
+/*Experiência Profissional*/
+
+ /*Contato*/
+
+/*Footer*/
+
+}
